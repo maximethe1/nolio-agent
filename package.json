@@ -1,0 +1,13 @@
+{
+  "name": "nolio-agent",
+  "version": "1.0.0",
+  "main": "nolio-agent-server.js",
+  "scripts": {
+    "start": "node nolio-agent-server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "puppeteer": "^21.0.0"
+  }
+}
