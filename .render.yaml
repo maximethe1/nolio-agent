@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: nolio-agent
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NOLIO_EMAIL
+        sync: false
+      - key: NOLIO_PASSWORD
+        sync: false
+    buildFilter:
+      paths:
+        - "*"
+    autoDeploy: true
